@@ -81,7 +81,7 @@
   },
   {
     "first-name": "hello",
-    "last-name": "Kitty",
+    "last-name": "kitty",
     "user-id": "031",
     "create-acc": "Sukurti nauj\\u0105 s\\u0105skait\\u0105",
     "bank-no": "LT501910605468511551",
@@ -93,6 +93,14 @@
     "user-id": "65465135135",
     "create-acc": "Sukurti nauj\\u0105 s\\u0105skait\\u0105",
     "bank-no": "LT364427197533651784",
+    "balance": 0
+  },
+  {
+    "first-name": "sasha",
+    "last-name": "grey",
+    "user-id": "501",
+    "create-acc": "Sukurti nauj\\u0105 s\\u0105skait\\u0105",
+    "bank-no": "LT36442719753",
     "balance": 0
   }
 ]

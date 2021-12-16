@@ -7,6 +7,8 @@ $page_title='Sąskaitų sąrašas';
 require ('inc/functions.php');
 
 $show_db = dbfile('db/userid.json');
+$columns = array_column($show_db, 'last-name');
+array_multisort($columns, SORT_ASC, $show_db);
 ?>
     <h1>Sąskaitų sąrašas</h1>
 
@@ -22,15 +24,18 @@ $show_db = dbfile('db/userid.json');
         for ($i=0;$i<sizeof($show_db);$i++) {
                 echo '
                 <tr>
-                <td>' . $show_db[$i]["first-name"] . '</td>
-                <td>' . $show_db[$i]["last-name"] . '</td>
-                <td>' . $show_db[$i]["user-id"] . '</td>
-                <td>' . $show_db[$i]["bank-no"] . '</td>
-                <td>' . $show_db[$i]["balance"] . '</td>
+                    <td>' . $show_db[$i]["first-name"] . '</td>
+                    <td>' . $show_db[$i]["last-name"] . '</td>
+                    <td>' . $show_db[$i]["user-id"] . '</td>
+                    <td>' . $show_db[$i]["bank-no"] . '</td>
+                    <td>' . $show_db[$i]["balance"] . '</td>
+                    <td><button>Papildyti</button></td>
+                    <td><button>Pervesti</button></td>
                 </tr>
                 ';
         }
         ?>
+
     </table>
 <?php
 
