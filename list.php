@@ -29,8 +29,8 @@ array_multisort($columns, SORT_ASC, $show_db);
                     <td>' . $show_db[$i]["user-id"] . '</td>
                     <td>' . $show_db[$i]["bank-no"] . '</td>
                     <td>' . $show_db[$i]["balance"] . '</td>
-                    <td><button>Papildyti</button></td>
-                    <td><button>Pervesti</button></td>
+                    <td><a href="addfunds.php?action='.$show_db[$i]["bank-no"].'">Papildyti</a></td>
+                    <td><a href="sendfunds.php?action='.$show_db[$i]["bank-no"].'">Pervesti</a></td>
                 </tr>
                 ';
         }
