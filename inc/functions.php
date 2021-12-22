@@ -24,6 +24,14 @@ function dbwrite($array, $link) {
     }
 }
 
+//  Make a change to json file
+
+function dbchange ($array, $link) {
+
+}
+
+
+
 // Check is user-id authentic
 
 function id_exists($id, $link) {
